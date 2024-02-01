@@ -1,0 +1,17 @@
+<suite name="Example suite">
+    <test name="Chrome">
+        <classes>
+            <parameter name="browserName" value="chrome" />
+<!--            <parameter name="headless" value="false" />-->
+            <class name="ui_tests.CloseTaskTest"/>
+            <class name="ui_tests.TaskActionTest"/>
+        </classes>
+    </test>
+    <test name="FireFox browser">
+        <classes>
+            <parameter name="browserName" value="firefox" />
+<!--            <parameter name="headless" value="false" />-->
+            <class name="ui_tests.CloseTaskTest"/>
+        </classes>
+    </test>
+</suite>
