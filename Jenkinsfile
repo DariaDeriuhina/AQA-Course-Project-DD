@@ -18,7 +18,7 @@ pipeline {
                 sh 'mvn --version'
                 sh 'java --version'
                 echo "Build number $env.BUILD_NUMBER"
-                sh "mvn clean test -DbaseURL=$baseURL -Dsuite=$suite -Dlocal=$local"
+                sh "mvn clean test -DbaseURL=$baseURL -Dsuite=$suite -DbrowserName=chrome -Dheadless=false -Dlocal=$local"
             }
 
             post {
