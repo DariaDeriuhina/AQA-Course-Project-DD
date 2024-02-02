@@ -3,11 +3,8 @@ package ui_tests;
 import api.groped_steps.GroupedLoginSteps;
 import base.BaseTest;
 import data_provider.TestUIData;
-import entity.User;
-import org.openqa.selenium.Cookie;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import ui_pages.kanboard.MainPage;
 

@@ -2,13 +2,8 @@ package ui_tests;
 
 import api.groped_steps.GroupedLoginSteps;
 import base.BaseTest;
-import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.ElementsCollection;
-import data_provider.TestUIData;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import ui_pages.Form.TaskForm;
 import ui_pages.kanboard.BoardPage;

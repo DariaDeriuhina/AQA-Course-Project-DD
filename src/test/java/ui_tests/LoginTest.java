@@ -23,7 +23,7 @@ public class LoginTest extends BaseTest{
     }
 
     @Description("Positive: Check the login is successful with correct login and password")
-    @Test(dataProvider = "correctUser", dataProviderClass = TestUIData.class)
+    @Test(priority = 1, dataProvider = "correctUser", dataProviderClass = TestUIData.class)
     public void successfulAuthorizationTest(User user){
         loginPage = new LoginPage(driver);
         mainPage = loginPage.login(user);
@@ -34,7 +34,7 @@ public class LoginTest extends BaseTest{
     }
 
     @Description("Negative: Check the login is failed with incorrect login and password")
-    @Test(dataProvider = "illegalLoginPassword", dataProviderClass = TestUIData.class)
+    @Test(priority = 2, dataProvider = "illegalLoginPassword", dataProviderClass = TestUIData.class)
     public void failedAuthorizationBothCredentialsTest(User user){
         loginPage = new LoginPage(driver);
         loginPage.login(user);
@@ -45,7 +45,7 @@ public class LoginTest extends BaseTest{
     }
 
     @Description("Negative: Check the login is failed with incorrect password")
-    @Test(dataProvider = "illegalPassword", dataProviderClass = TestUIData.class)
+    @Test(priority = 3, dataProvider = "illegalPassword", dataProviderClass = TestUIData.class)
     public void failedAuthorizationPasswordTest(User user){
         loginPage = new LoginPage(driver);
         loginPage.login(user);
@@ -56,7 +56,7 @@ public class LoginTest extends BaseTest{
     }
 
     @Description("Negative: Check the login is failed with incorrect login")
-    @Test(dataProvider = "illegalLogin", dataProviderClass = TestUIData.class)
+    @Test(priority = 4, dataProvider = "illegalLogin", dataProviderClass = TestUIData.class)
     public void failedAuthorizationLoginTest(User user){
         loginPage = new LoginPage(driver);
         loginPage.login(user);
