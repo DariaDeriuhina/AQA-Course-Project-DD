@@ -1,0 +1,9 @@
+<suite name="Example suite">
+    <test name="RestAssured">
+        <classes>
+            <class name="api.tests.LoginTest"/>
+            <class name="api.tests.ProjectTests"/>
+            <class name="api.tests.TasksTest"/>
+        </classes>
+    </test>
+</suite>

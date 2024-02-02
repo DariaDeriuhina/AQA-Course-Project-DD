@@ -1,0 +1,10 @@
+<suite name="Example suite">
+    <test name="RestAssured">
+        <classes>
+            <class name="ui_tests.CloseTaskTest"/>
+            <class name="ui_tests.CreateProjectTest"/>
+            <class name="ui_tests.LoginTest"/>
+            <class name="ui_tests.TaskActionTest"/>
+        </classes>
+    </test>
+</suite>
