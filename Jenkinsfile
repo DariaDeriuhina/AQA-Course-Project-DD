@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     parameters {
-        string defaultValue: 'http://127.0.0.1', name:'baseUrl'
+        string defaultValue: 'https://6e24-31-202-41-92.ngrok-free.app', name:'baseUrl'
         choice choices: ['api', 'ui'], name:'suite'
         booleanParam defaultValue: false, name: 'local'
     }
