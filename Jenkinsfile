@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     parameters {
-        string defaultValue: 'http://127.0.0.1', name:'baseURL'
+        string defaultValue: 'http://127.0.0.1', name:'baseUrl'
         choice choices: ['api', 'ui'], name:'suite'
         booleanParam defaultValue: false, name: 'local'
     }
