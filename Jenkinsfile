@@ -8,7 +8,7 @@ pipeline {
     }
 
     tools {
-        maven 'Apache Maven 3.8.5'
+        maven 'maven'
         jdk 'JDK_17'
     }
 
