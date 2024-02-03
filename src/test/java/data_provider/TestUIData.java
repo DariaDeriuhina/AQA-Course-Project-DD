@@ -1,6 +1,6 @@
 package data_provider;
 
-import entity.User;
+import models.entity.User;
 import org.testng.annotations.DataProvider;
 import org.apache.commons.lang3.RandomStringUtils;
 
