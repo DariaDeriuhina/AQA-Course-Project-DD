@@ -4,8 +4,6 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.jsoup.Jsoup;
 
-import static io.restassured.RestAssured.given;
-
 public class SessionApiSteps extends BaseApiSteps {
     public static final String KB_SID = "KB_SID";
     public static final String KB_RM = "KB_RM";

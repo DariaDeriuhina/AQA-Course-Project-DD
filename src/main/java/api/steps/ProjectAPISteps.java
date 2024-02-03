@@ -13,7 +13,6 @@ import static utils.EnvProperties.API_USERNAME;
 
 public class ProjectAPISteps extends BaseApiSteps{
     public String createProject(String title) {
-        // Замените значения параметров на реальные данные
         CreateProjectParams args = CreateProjectParams.builder()
                 .name(title)
                 .build();
@@ -23,7 +22,6 @@ public class ProjectAPISteps extends BaseApiSteps{
                 .method(CREATE_PROJECT)
                 .build();
 
-        // Выполняем запрос на создание проекта
         Response response = postRequest(API_USERNAME, API_TOKEN, bodyArgs);
         response.then().statusCode(200);
         Result bodyResult = response.as(Result.class);

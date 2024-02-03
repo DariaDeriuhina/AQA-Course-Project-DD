@@ -2,14 +2,10 @@ package base;
 
 import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-import java.time.Duration;
-
-import static com.codeborne.selenide.Selenide.open;
 import static utils.EnvProperties.BASE_URL;
 import static utils.EnvProperties.setUpInstance;
 

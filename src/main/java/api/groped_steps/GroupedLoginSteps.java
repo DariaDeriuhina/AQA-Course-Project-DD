@@ -4,10 +4,6 @@ import api.steps.SessionApiSteps;
 import com.codeborne.selenide.WebDriverRunner;
 import io.restassured.response.Response;
 import org.openqa.selenium.Cookie;
-import ui_pages.kanboard.MainPage;
-
-import static api.steps.SessionApiSteps.KB_RM;
-import static api.steps.SessionApiSteps.KB_SID;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.open;
 
