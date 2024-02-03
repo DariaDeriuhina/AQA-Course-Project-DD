@@ -3,15 +3,15 @@
         <classes>
             <parameter name="browserName" value="chrome" />
 <!--            <parameter name="headless" value="false" />-->
-            <class name="ui_tests.CloseTaskTest"/>
-            <class name="ui_tests.TaskActionTest"/>
+            <class name="ui.CloseTaskTest"/>
+            <class name="ui.TaskActionTest"/>
         </classes>
     </test>
     <test name="FireFox browser">
         <classes>
             <parameter name="browserName" value="firefox" />
 <!--            <parameter name="headless" value="false" />-->
-            <class name="ui_tests.CloseTaskTest"/>
+            <class name="ui.CloseTaskTest"/>
         </classes>
     </test>
 </suite>

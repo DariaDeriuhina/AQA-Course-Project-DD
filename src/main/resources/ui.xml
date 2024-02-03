@@ -1,10 +1,10 @@
 <suite name="Example suite">
     <test name="RestAssured">
         <classes>
-            <class name="ui_tests.CloseTaskTest"/>
-            <class name="ui_tests.CreateProjectTest"/>
-            <class name="ui_tests.LoginTest"/>
-            <class name="ui_tests.TaskActionTest"/>
+            <class name="ui.CloseTaskTest"/>
+            <class name="ui.CreateProjectTest"/>
+            <class name="ui.LoginTest"/>
+            <class name="ui.TaskActionTest"/>
         </classes>
     </test>
 </suite>

@@ -1,8 +1,7 @@
 package ui_pages.kanboard;
 
 import com.codeborne.selenide.SelenideElement;
-import entity.User;
-import lombok.Data;
+import models.entity.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import ui_pages.BasePage;
